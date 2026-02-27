@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Jokes App{% endblock %}
+
+{% block content %}
+<!-- Display the Joke in bootstrap quote format in center screen. Make the font size bigger -->
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <blockquote class="blockquote text-center">
+                <p class="mb-0 fs-4">{{ joke }}</p>
+            </blockquote>
+        </div>
+    </div>
+</div>
+{% endblock %}
